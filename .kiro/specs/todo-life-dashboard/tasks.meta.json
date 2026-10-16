@@ -1,0 +1,274 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Update `index.html`: change task input `maxlength` from `120` to `200` and add a `<p id=\"todo-error\">` element below the input row for inline validation errors": [
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792158966407
+      },
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792158981502
+      },
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159064743
+      }
+    ],
+    "2.1 Make link delete buttons always visible by removing the `opacity: 0` / hover-reveal rule and setting `.link-delete { opacity: 1 }` permanently": [
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792158968515
+      },
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792158986218
+      },
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159069918
+      }
+    ],
+    "3.1 Extract `formatTime24(date)` and `formatDateLong(date)` as standalone named functions (currently inlined inside `updateClock`), keeping `updateClock` calling them": [
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792158968821
+      },
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159079034
+      },
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159148812
+      }
+    ],
+    "3.2 Fix `getGreeting(hour)` boundary conditions: change boundaries to match spec exactly — `[5,11]` → Morning, `[12,17]` → Afternoon, `[18,20]` → Evening, `[21,23] ∪ [0,4]` → Night": [
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792158969181
+      },
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159083880
+      },
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159153218
+      }
+    ],
+    "3.3 Extract `normaliseUrl(url)` as a standalone named function (currently inlined inside `addLink`)": [
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792158969285
+      },
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159088667
+      },
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159157961
+      }
+    ],
+    "4.1 Rename storage constants: `TODO_KEY` → `'tdld_tasks'` and `LINKS_KEY` → `'tdld_links'` (from current `todoLifeDashboard_todos` / `todoLifeDashboard_links`)": [
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792158969575
+      },
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159226852
+      },
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159304564
+      }
+    ],
+    "4.2 Implement `loadData(key, defaultValue)` and `saveData(key, value)` utility functions with full structural validation": [
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792158969800
+      },
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159231438
+      },
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159308721
+      }
+    ],
+    "5.1 Add 200-character validation in `addTodo()`: if `text.length > 200` after trimming, display an error message in `#todo-error`, retain focus on `#todo-input`, and do not create a task; clear the error on the next successful submission": [
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792158970413
+      },
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159236053
+      },
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159314142
+      }
+    ],
+    "5.2 Fix `openEditModal()`: after `editInput.value = todos[index].text`, position the cursor at the end of the text using `editInput.setSelectionRange(len, len)` instead of `editInput.select()` (which selects all text)": [
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792158970979
+      },
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159239843
+      },
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159318965
+      }
+    ],
+    "6.1 In `renderLinks()`, build the `<a>` element using `document.createElement('a')` and set `anchor.href = link.url` directly (not via `innerHTML`) to prevent `javascript:` injection; set label text via `anchor.textContent = link.name`": [
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792158971568
+      },
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159243824
+      },
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159324133
+      }
+    ],
+    "7. Checkpoint — verify manual smoke test": [
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792158971867
+      },
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159337254
+      }
+    ],
+    "8.1 Initialise npm project and install test dependencies: `npm init -y` then `npm install --save-dev jest jest-environment-jsdom fast-check`": [
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792158971965
+      },
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159341492
+      }
+    ],
+    "8.2 Create `js/app.utils.js` that exports the pure utility functions (`getGreeting`, `formatTime24`, `formatDateLong`, `formatTime`, `normaliseUrl`, `isValidUrl`, `escapeHtml`, `loadData`, `saveData`) so Jest can import them without a browser DOM": [
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792158972063
+      }
+    ],
+    "9.1 Create `tests/greeting.test.js`: test `getGreeting` boundary values (hour 0, 4, 5, 11, 12, 17, 18, 20, 21, 23); test `formatTime24` produces correct `HH:MM:SS` for midnight, noon, 23:59:59; test `formatDateLong` contains weekday, day, month name, and year": [
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792158972161
+      }
+    ],
+    "11. Final checkpoint — all tests pass": [
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792158972252
+      }
+    ],
+    "1. Fix HTML structure gaps": [
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159065004
+      }
+    ],
+    "2. Fix CSS/visual gaps": [
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159070078
+      }
+    ],
+    "3. Refactor `js/app.js` — extract and fix pure utility functions": [
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159158159
+      }
+    ],
+    "2.2 Add styles for `#storage-warning` (non-blocking top banner, visible warning colour) and `#todo-error` (inline red error text below the input row)": [
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159181287
+      },
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159222131
+      }
+    ],
+    "4. Fix storage keys and implement robust storage layer": [
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159308877
+      }
+    ],
+    "5. Fix To-Do List logic gaps": [
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159319109
+      }
+    ],
+    "6. Fix Quick Links XSS hardening": [
+      {
+        "executionId": "5381b1d0-0282-442e-9e70-cc0a0456261c",
+        "chatSessionId": "sess_1066ab83-f0d9-49b8-9fde-74bbd1f50f98",
+        "timestamp": 1792159324279
+      }
+    ]
+  }
+}
